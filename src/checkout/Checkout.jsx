@@ -124,10 +124,7 @@ function Checkout() {
                 <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="700000000" required />
               </div>
 
-              <div className="form-group checkbox">
-                <input type="checkbox" name="receiveUpdates" checked={formData.receiveUpdates} onChange={handleChange} />
-                <label>Email me with updates and offers</label>
-              </div>
+             
 
               <h2>Shipping</h2>
               <div className="shipping-option active">

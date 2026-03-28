@@ -22,18 +22,13 @@ function Navbar() {
         {/* Desktop Navigation */}
         <div className="nav-links desktop">
           <NavLink to="/product">Shop</NavLink>
-          <NavLink to="/offers">Offers</NavLink>
-          <NavLink to="/about">About</NavLink>
+          {/* <NavLink to="/offers">Offers</NavLink>
+          <NavLink to="/about">About</NavLink> */}
         </div>
 
         {/* Right side: Search + Cart + Hamburger */}
         <div className="nav-actions">
-          <div className="search-bar">
-            <input 
-              type="text" 
-              placeholder="Search products..." 
-            />
-          </div>
+        
 
           <NavLink to="/Cart" className="cart-icon">
             🛒 Cart
