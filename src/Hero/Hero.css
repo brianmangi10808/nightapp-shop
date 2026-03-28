@@ -95,7 +95,7 @@
 @media (max-width: 768px) {
   .hero {
     min-height: 50vh;
-    padding-top: 10px; /* Space for sticky navbar */
+    padding-top: 30px; /* Space for sticky navbar */
   }
 
   .hero-title {

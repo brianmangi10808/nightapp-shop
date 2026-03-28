@@ -1,8 +1,7 @@
 .products-page {
-  
-  color: white;
-  min-height: 100vh;
-  padding: 2rem 1rem;
+  padding: 20px 10px;           /* Reduced side padding */
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .products-header h1 {
@@ -43,6 +42,7 @@
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
 }
+
 
 .product-card {
  

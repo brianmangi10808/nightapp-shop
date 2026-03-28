@@ -8,25 +8,38 @@ import Cart from './cart/Cart';
 import Checkout from './checkout/Checkout';
 import Product from './Products/Product';
 import Hero from './Hero/Hero';
-import ProductDetail from './Products/ProductDetail';   // ← New
-
+import ProductDetail from './Products/ProductDetail';
 
 function App() {
   return (
     <div className="App">
-      {/* Navbar outside Routes - it should appear on all pages */}
       <Navbar />
-      <Hero/>
-     
-      <Routes>
-        <Route path="/" element={Product}/>
-        <Route path="/product" element={<Product />} />
-                <Route path="/product/:id" element={<ProductDetail />} />   {/* ← Dynamic Route */}
 
+      <Routes>
+        {/* Home Page - Shows Hero + Products */}
+        <Route path="/" element={
+          <>
+            <Hero />
+            <Product />
+          </>
+        } />
+
+        {/* Shop Page */}
+        <Route path="/product" element={<Product />} />
+
+        {/* Product Detail */}
+        <Route path="/product/:id" element={<ProductDetail />} />
+
+        {/* Cart Page - No Hero */}
         <Route path="/cart" element={<Cart />} />
+
+        {/* Checkout Page - No Hero */}
         <Route path="/checkout" element={<Checkout />} />
+
+        {/* About */}
         <Route path="/about" element={<About />} />
-        <Route path="*" element={<div>COMMING SOON</div>} />
+
+        <Route path="*" element={<div style={{padding: '100px 20px', textAlign: 'center'}}>Coming Soon</div>} />
       </Routes>
     </div>
   );

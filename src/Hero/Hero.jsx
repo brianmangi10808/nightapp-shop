@@ -26,9 +26,7 @@ function Hero() {
             <Link to="/product" className="btn btn-primary">
               Shop Now
             </Link>
-            <Link to="/offers" className="btn btn-secondary">
-              View Offers
-            </Link>
+           
           </div>
         </div>
       </div>
